@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Launch Screen View Controller-->
+        <scene sceneID="LzL-3r-gjg">
+            <objects>
+                <viewController storyboardIdentifier="LaunchScreenVC" id="J4a-me-0pH" customClass="LaunchScreenViewController" customModule="AirAsia" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KiK-yJ-Tp7"/>
+                        <viewControllerLayoutGuide type="bottom" id="7Rw-60-IE3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0I2-LS-IdB">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Firefly Mobile" textAlignment="center" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="a7Y-m5-fqO">
+                                <rect key="frame" x="20" y="180" width="560" height="43"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Copyright (c) 2016 ME-Tech. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="47r-TN-d75">
+                                <rect key="frame" x="20" y="559" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splashScreen" translatesAutoresizingMaskIntoConstraints="NO" id="Ts6-3I-9zM">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qnC-ls-y86">
+                                <rect key="frame" x="250" y="400" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="VDi-US-ykb"/>
+                                    <constraint firstAttribute="width" constant="100" id="pny-df-nko"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alertIcon" translatesAutoresizingMaskIntoConstraints="NO" id="nkU-cJ-8sC">
+                                <rect key="frame" x="163" y="229" width="274" height="142"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="142" id="0Iz-3U-LX2"/>
+                                    <constraint firstAttribute="width" constant="274" id="gdi-EC-Xop"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="a7Y-m5-fqO" firstAttribute="top" secondItem="KiK-yJ-Tp7" secondAttribute="bottom" constant="160" id="2Ez-fO-ND6"/>
+                            <constraint firstAttribute="trailing" secondItem="47r-TN-d75" secondAttribute="trailing" constant="20" id="38r-V8-smH"/>
+                            <constraint firstItem="7Rw-60-IE3" firstAttribute="top" secondItem="47r-TN-d75" secondAttribute="bottom" constant="20" id="BuT-ov-lDJ"/>
+                            <constraint firstItem="7Rw-60-IE3" firstAttribute="top" secondItem="Ts6-3I-9zM" secondAttribute="bottom" id="DM1-2H-ZHz"/>
+                            <constraint firstItem="Ts6-3I-9zM" firstAttribute="top" secondItem="0I2-LS-IdB" secondAttribute="top" id="Lja-NA-LCg"/>
+                            <constraint firstAttribute="trailing" secondItem="a7Y-m5-fqO" secondAttribute="trailing" constant="20" id="PNV-RN-Dea"/>
+                            <constraint firstAttribute="trailing" secondItem="Ts6-3I-9zM" secondAttribute="trailing" id="e2I-Jh-G7v"/>
+                            <constraint firstItem="Ts6-3I-9zM" firstAttribute="leading" secondItem="0I2-LS-IdB" secondAttribute="leading" id="g9s-Uh-75u"/>
+                            <constraint firstItem="nkU-cJ-8sC" firstAttribute="centerY" secondItem="0I2-LS-IdB" secondAttribute="centerY" id="jTX-Wh-bpw"/>
+                            <constraint firstItem="qnC-ls-y86" firstAttribute="centerX" secondItem="0I2-LS-IdB" secondAttribute="centerX" id="nbR-xj-n8M"/>
+                            <constraint firstItem="47r-TN-d75" firstAttribute="leading" secondItem="0I2-LS-IdB" secondAttribute="leading" constant="20" id="oi0-wM-scd"/>
+                            <constraint firstItem="qnC-ls-y86" firstAttribute="centerY" secondItem="0I2-LS-IdB" secondAttribute="centerY" constant="150" id="plo-1h-UM9"/>
+                            <constraint firstItem="a7Y-m5-fqO" firstAttribute="leading" secondItem="0I2-LS-IdB" secondAttribute="leading" constant="20" id="tAA-Pl-cO0"/>
+                            <constraint firstItem="nkU-cJ-8sC" firstAttribute="centerX" secondItem="0I2-LS-IdB" secondAttribute="centerX" id="xF0-SW-Ifx"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="a7Y-m5-fqO"/>
+                                <exclude reference="47r-TN-d75"/>
+                                <exclude reference="Ts6-3I-9zM"/>
+                                <exclude reference="qnC-ls-y86"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="5My-jP-cWA"/>
+                    <connections>
+                        <outlet property="loading" destination="qnC-ls-y86" id="ewg-OX-CPX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I0H-kJ-8jc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1527" y="1153"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="alertIcon" width="2374" height="1602"/>
+        <image name="splashScreen" width="640" height="1136"/>
+    </resources>
+</document>

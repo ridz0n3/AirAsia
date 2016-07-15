@@ -1,0 +1,814 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7E0ED68B1D372BD700E33E4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0ED68A1D372BD700E33E4F /* AppDelegate.swift */; };
+		7E0ED6921D372BD700E33E4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E0ED6901D372BD700E33E4F /* Main.storyboard */; };
+		7E0ED6971D372BD700E33E4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E0ED6951D372BD700E33E4F /* LaunchScreen.storyboard */; };
+		7E0ED6B91D3734F800E33E4F /* FireflyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0ED6B71D3734F800E33E4F /* FireflyAPI.swift */; };
+		7E0ED6BA1D3734F800E33E4F /* InitialLoadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0ED6B81D3734F800E33E4F /* InitialLoadManager.swift */; };
+		7E0ED6BE1D37351C00E33E4F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0ED6BC1D37351C00E33E4F /* BaseViewController.swift */; };
+		7E0ED6BF1D37351C00E33E4F /* BaseXLFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0ED6BD1D37351C00E33E4F /* BaseXLFormViewController.swift */; };
+		7E0ED6C11D3735C700E33E4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E0ED6C01D3735C700E33E4F /* Assets.xcassets */; };
+		7E0ED6F11D37378800E33E4F /* CustomChangeFlightTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0ED6E11D37378800E33E4F /* CustomChangeFlightTableViewCell.swift */; };
+		7E0ED6F21D37378800E33E4F /* CustomChooseSeatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0ED6E21D37378800E33E4F /* CustomChooseSeatTableViewCell.swift */; };
+		7E0ED6F31D37378800E33E4F /* CustomFlightDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0ED6E31D37378800E33E4F /* CustomFlightDetailTableViewCell.swift */; };
+		7E0ED6F41D37378800E33E4F /* CustomHomeMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0ED6E41D37378800E33E4F /* CustomHomeMenuTableViewCell.swift */; };
+		7E0ED6F51D37378800E33E4F /* CustomLoginManageFlightTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0ED6E51D37378800E33E4F /* CustomLoginManageFlightTableViewCell.swift */; };
+		7E0ED6F61D37378800E33E4F /* CustomManageFlightMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0ED6E61D37378800E33E4F /* CustomManageFlightMenuTableViewCell.swift */; };
+		7E0ED6F71D37378800E33E4F /* CustomMHFlightDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0ED6E71D37378800E33E4F /* CustomMHFlightDetailTableViewCell.swift */; };
+		7E0ED6F81D37378800E33E4F /* CustomPasswordExpiredlTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0ED6E81D37378800E33E4F /* CustomPasswordExpiredlTableViewCell.swift */; };
+		7E0ED6F91D37378800E33E4F /* CustomPaymentSummaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0ED6E91D37378800E33E4F /* CustomPaymentSummaryTableViewCell.swift */; };
+		7E0ED6FA1D37378800E33E4F /* CustomPaymentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0ED6EA1D37378800E33E4F /* CustomPaymentTableViewCell.swift */; };
+		7E0ED6FB1D37378800E33E4F /* CustomPersonalDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0ED6EB1D37378800E33E4F /* CustomPersonalDetailTableViewCell.swift */; };
+		7E0ED6FC1D37378800E33E4F /* CustomSearchFlightTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0ED6EC1D37378800E33E4F /* CustomSearchFlightTableViewCell.swift */; };
+		7E0ED6FD1D37378800E33E4F /* CustomSeatSelectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0ED6ED1D37378800E33E4F /* CustomSeatSelectionTableViewCell.swift */; };
+		7E0ED6FE1D37378800E33E4F /* MobileTermTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0ED6EE1D37378800E33E4F /* MobileTermTableViewCell.swift */; };
+		7E0ED6FF1D37378800E33E4F /* SideMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0ED6EF1D37378800E33E4F /* SideMenuTableViewCell.swift */; };
+		7E0ED7001D37378800E33E4F /* CustomFamilyListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0ED6F01D37378800E33E4F /* CustomFamilyListTableViewCell.swift */; };
+		7E0ED7091D3737B500E33E4F /* RSDFCustomDatePickerCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0ED7031D3737B500E33E4F /* RSDFCustomDatePickerCollectionView.swift */; };
+		7E0ED70A1D3737B500E33E4F /* RSDFCustomDatePickerCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0ED7041D3737B500E33E4F /* RSDFCustomDatePickerCollectionViewLayout.swift */; };
+		7E0ED70B1D3737B500E33E4F /* RSDFCustomDatePickerDayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0ED7051D3737B500E33E4F /* RSDFCustomDatePickerDayCell.swift */; };
+		7E0ED70C1D3737B500E33E4F /* RSDFCustomDatePickerDaysOfWeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0ED7061D3737B500E33E4F /* RSDFCustomDatePickerDaysOfWeekView.swift */; };
+		7E0ED70D1D3737B500E33E4F /* RSDFCustomDatePickerMonthHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0ED7071D3737B500E33E4F /* RSDFCustomDatePickerMonthHeader.swift */; };
+		7E0ED70E1D3737B500E33E4F /* RSDFCustomDatePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0ED7081D3737B500E33E4F /* RSDFCustomDatePickerView.swift */; };
+		7E0ED7111D3737C600E33E4F /* CustomFlightPicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E0ED70F1D3737C600E33E4F /* CustomFlightPicker.storyboard */; };
+		7E0ED7121D3737C600E33E4F /* CustomFlightPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0ED7101D3737C600E33E4F /* CustomFlightPickerViewController.swift */; };
+		7E0ED7161D373B8800E33E4F /* RSDFDatePicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E0ED7141D373B8800E33E4F /* RSDFDatePicker.storyboard */; };
+		7E0ED7171D373B8900E33E4F /* RSDFDatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0ED7151D373B8800E33E4F /* RSDFDatePickerViewController.swift */; };
+		7E0ED7221D373BBA00E33E4F /* NSMutableString+ExtraMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E0ED71A1D373BBA00E33E4F /* NSMutableString+ExtraMethod.m */; };
+		7E0ED7231D373BBA00E33E4F /* NSString+ExtraMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E0ED71B1D373BBA00E33E4F /* NSString+ExtraMethod.m */; };
+		7E0ED7251D373BBA00E33E4F /* EncryptManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0ED71D1D373BBA00E33E4F /* EncryptManager.swift */; };
+		7E0ED7261D373BBA00E33E4F /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0ED71E1D373BBA00E33E4F /* LoginManager.swift */; };
+		7E0ED7271D373BBA00E33E4F /* LogoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0ED71F1D373BBA00E33E4F /* LogoutManager.swift */; };
+		7E0ED7291D373BBA00E33E4F /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0ED7211D373BBA00E33E4F /* UIImage+Gif.swift */; };
+		7E0ED7311D373CC700E33E4F /* BoardingPassList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0ED72B1D373CC700E33E4F /* BoardingPassList.swift */; };
+		7E0ED7321D373CC700E33E4F /* CheckInList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0ED72C1D373CC700E33E4F /* CheckInList.swift */; };
+		7E0ED7331D373CC700E33E4F /* PNRList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0ED72D1D373CC700E33E4F /* PNRList.swift */; };
+		7E0ED7341D373CC700E33E4F /* UserList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0ED72E1D373CC700E33E4F /* UserList.swift */; };
+		7E0ED7351D373CC700E33E4F /* FamilyAndFriendList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0ED72F1D373CC700E33E4F /* FamilyAndFriendList.swift */; };
+		7E0ED7361D373CC700E33E4F /* FamilyAndFriendData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0ED7301D373CC700E33E4F /* FamilyAndFriendData.swift */; };
+		7E0ED73B1D373DA300E33E4F /* CustomFloatLabelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0ED7381D373DA300E33E4F /* CustomFloatLabelCell.swift */; };
+		7E0ED73C1D373DA300E33E4F /* CustomCheckBoxCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0ED7391D373DA300E33E4F /* CustomCheckBoxCell.swift */; };
+		7E0ED73D1D373DA300E33E4F /* CustomCheckBoxCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E0ED73A1D373DA300E33E4F /* CustomCheckBoxCell.xib */; };
+		7E0ED7421D37422F00E33E4F /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E0ED7401D37422F00E33E4F /* SplashScreen.storyboard */; };
+		7E0ED7431D37422F00E33E4F /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0ED7411D37422F00E33E4F /* LaunchScreenViewController.swift */; };
+		7E0ED7461D3747CE00E33E4F /* SearchFlightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0ED7451D3747CE00E33E4F /* SearchFlightViewController.swift */; };
+		7E0ED7481D37557100E33E4F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0ED7471D37557100E33E4F /* HomeViewController.swift */; };
+		7E0ED74B1D37585000E33E4F /* BookFlight.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E0ED74A1D37585000E33E4F /* BookFlight.storyboard */; };
+		7E0ED74D1D37589300E33E4F /* AddFlightDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0ED74C1D37589300E33E4F /* AddFlightDetailViewController.swift */; };
+		7E0ED7501D3758C400E33E4F /* CommonFlightDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0ED74F1D3758C400E33E4F /* CommonFlightDetailViewController.swift */; };
+		7E0ED7601D37596700E33E4F /* DirectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0ED7521D37596700E33E4F /* DirectionView.swift */; };
+		7E0ED7611D37596700E33E4F /* FlightHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0ED7531D37596700E33E4F /* FlightHeaderView.swift */; };
+		7E0ED7621D37596700E33E4F /* MHFlightHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0ED7541D37596700E33E4F /* MHFlightHeaderView.swift */; };
+		7E0ED7631D37596700E33E4F /* PassengerHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0ED7551D37596700E33E4F /* PassengerHeaderView.swift */; };
+		7E0ED7641D37596700E33E4F /* PassengerHeaderViewButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0ED7561D37596700E33E4F /* PassengerHeaderViewButton.swift */; };
+		7E0ED7651D37596700E33E4F /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0ED7571D37596700E33E4F /* SectionView.swift */; };
+		7E0ED7661D37596700E33E4F /* directionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E0ED7581D37596700E33E4F /* directionView.xib */; };
+		7E0ED7671D37596700E33E4F /* FlightHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E0ED7591D37596700E33E4F /* FlightHeader.xib */; };
+		7E0ED7681D37596700E33E4F /* FlightHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E0ED75A1D37596700E33E4F /* FlightHeaderView.xib */; };
+		7E0ED7691D37596700E33E4F /* MHFlightHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E0ED75B1D37596700E33E4F /* MHFlightHeaderView.xib */; };
+		7E0ED76A1D37596700E33E4F /* MobileCheckInView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E0ED75C1D37596700E33E4F /* MobileCheckInView.xib */; };
+		7E0ED76B1D37596700E33E4F /* PassengerHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E0ED75D1D37596700E33E4F /* PassengerHeader.xib */; };
+		7E0ED76C1D37596700E33E4F /* PassengerHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E0ED75E1D37596700E33E4F /* PassengerHeaderView.xib */; };
+		7E0ED76D1D37596700E33E4F /* SectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E0ED75F1D37596700E33E4F /* SectionView.xib */; };
+		7E0ED76F1D375B1700E33E4F /* AddPassengerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0ED76E1D375B1700E33E4F /* AddPassengerDetailViewController.swift */; };
+		7E0ED7711D375B2800E33E4F /* CommonPassengerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0ED7701D375B2800E33E4F /* CommonPassengerDetailViewController.swift */; };
+		7E0ED7731D375C8B00E33E4F /* AddContactDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0ED7721D375C8B00E33E4F /* AddContactDetailViewController.swift */; };
+		7E0ED7751D375C9700E33E4F /* CommonContactDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0ED7741D375C9700E33E4F /* CommonContactDetailViewController.swift */; };
+		7E0ED7781D375E1300E33E4F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7E0ED7771D375E1300E33E4F /* GoogleService-Info.plist */; };
+		7E0ED77A1D375E1E00E33E4F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7E0ED7791D375E1E00E33E4F /* Localizable.strings */; };
+		7E0ED77C1D375E2E00E33E4F /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0ED77B1D375E2E00E33E4F /* Constant.swift */; };
+		7E0ED77E1D375E4200E33E4F /* ExtensionFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0ED77D1D375E4200E33E4F /* ExtensionFile.swift */; };
+		7E0ED7801D3760DF00E33E4F /* AddSeatSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0ED77F1D3760DF00E33E4F /* AddSeatSelectionViewController.swift */; };
+		7E0ED7821D3760FB00E33E4F /* CommonSeatSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0ED7811D3760FB00E33E4F /* CommonSeatSelectionViewController.swift */; };
+		7E0ED7841D37612900E33E4F /* PaymentSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0ED7831D37612900E33E4F /* PaymentSummaryViewController.swift */; };
+		7E4DF4FA1D3881BB00BC4E8B /* AddPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4DF4F91D3881BB00BC4E8B /* AddPaymentViewController.swift */; };
+		7E4DF4FC1D3881E400BC4E8B /* CommonPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4DF4FB1D3881E400BC4E8B /* CommonPaymentViewController.swift */; };
+		C6EF5E574549208AF323D078 /* Pods_AirAsia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B036AB3D48571EB3373E5C8 /* Pods_AirAsia.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5B036AB3D48571EB3373E5C8 /* Pods_AirAsia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AirAsia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BB489C38FF6BE863CE81BA0 /* Pods-AirAsia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirAsia.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AirAsia/Pods-AirAsia.debug.xcconfig"; sourceTree = "<group>"; };
+		7E0ED6871D372BD600E33E4F /* AirAsia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirAsia.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E0ED68A1D372BD700E33E4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7E0ED6911D372BD700E33E4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7E0ED6961D372BD700E33E4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7E0ED6981D372BD700E33E4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E0ED6B71D3734F800E33E4F /* FireflyAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FireflyAPI.swift; sourceTree = "<group>"; };
+		7E0ED6B81D3734F800E33E4F /* InitialLoadManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialLoadManager.swift; sourceTree = "<group>"; };
+		7E0ED6BC1D37351C00E33E4F /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		7E0ED6BD1D37351C00E33E4F /* BaseXLFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseXLFormViewController.swift; sourceTree = "<group>"; };
+		7E0ED6C01D3735C700E33E4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7E0ED6E11D37378800E33E4F /* CustomChangeFlightTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomChangeFlightTableViewCell.swift; sourceTree = "<group>"; };
+		7E0ED6E21D37378800E33E4F /* CustomChooseSeatTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomChooseSeatTableViewCell.swift; sourceTree = "<group>"; };
+		7E0ED6E31D37378800E33E4F /* CustomFlightDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomFlightDetailTableViewCell.swift; sourceTree = "<group>"; };
+		7E0ED6E41D37378800E33E4F /* CustomHomeMenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomHomeMenuTableViewCell.swift; sourceTree = "<group>"; };
+		7E0ED6E51D37378800E33E4F /* CustomLoginManageFlightTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLoginManageFlightTableViewCell.swift; sourceTree = "<group>"; };
+		7E0ED6E61D37378800E33E4F /* CustomManageFlightMenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomManageFlightMenuTableViewCell.swift; sourceTree = "<group>"; };
+		7E0ED6E71D37378800E33E4F /* CustomMHFlightDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomMHFlightDetailTableViewCell.swift; sourceTree = "<group>"; };
+		7E0ED6E81D37378800E33E4F /* CustomPasswordExpiredlTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPasswordExpiredlTableViewCell.swift; sourceTree = "<group>"; };
+		7E0ED6E91D37378800E33E4F /* CustomPaymentSummaryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPaymentSummaryTableViewCell.swift; sourceTree = "<group>"; };
+		7E0ED6EA1D37378800E33E4F /* CustomPaymentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPaymentTableViewCell.swift; sourceTree = "<group>"; };
+		7E0ED6EB1D37378800E33E4F /* CustomPersonalDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPersonalDetailTableViewCell.swift; sourceTree = "<group>"; };
+		7E0ED6EC1D37378800E33E4F /* CustomSearchFlightTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSearchFlightTableViewCell.swift; sourceTree = "<group>"; };
+		7E0ED6ED1D37378800E33E4F /* CustomSeatSelectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSeatSelectionTableViewCell.swift; sourceTree = "<group>"; };
+		7E0ED6EE1D37378800E33E4F /* MobileTermTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MobileTermTableViewCell.swift; sourceTree = "<group>"; };
+		7E0ED6EF1D37378800E33E4F /* SideMenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuTableViewCell.swift; sourceTree = "<group>"; };
+		7E0ED6F01D37378800E33E4F /* CustomFamilyListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomFamilyListTableViewCell.swift; sourceTree = "<group>"; };
+		7E0ED7031D3737B500E33E4F /* RSDFCustomDatePickerCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSDFCustomDatePickerCollectionView.swift; sourceTree = "<group>"; };
+		7E0ED7041D3737B500E33E4F /* RSDFCustomDatePickerCollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSDFCustomDatePickerCollectionViewLayout.swift; sourceTree = "<group>"; };
+		7E0ED7051D3737B500E33E4F /* RSDFCustomDatePickerDayCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSDFCustomDatePickerDayCell.swift; sourceTree = "<group>"; };
+		7E0ED7061D3737B500E33E4F /* RSDFCustomDatePickerDaysOfWeekView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSDFCustomDatePickerDaysOfWeekView.swift; sourceTree = "<group>"; };
+		7E0ED7071D3737B500E33E4F /* RSDFCustomDatePickerMonthHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSDFCustomDatePickerMonthHeader.swift; sourceTree = "<group>"; };
+		7E0ED7081D3737B500E33E4F /* RSDFCustomDatePickerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSDFCustomDatePickerView.swift; sourceTree = "<group>"; };
+		7E0ED70F1D3737C600E33E4F /* CustomFlightPicker.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CustomFlightPicker.storyboard; sourceTree = "<group>"; };
+		7E0ED7101D3737C600E33E4F /* CustomFlightPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomFlightPickerViewController.swift; sourceTree = "<group>"; };
+		7E0ED7141D373B8800E33E4F /* RSDFDatePicker.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RSDFDatePicker.storyboard; sourceTree = "<group>"; };
+		7E0ED7151D373B8800E33E4F /* RSDFDatePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSDFDatePickerViewController.swift; sourceTree = "<group>"; };
+		7E0ED7181D373BBA00E33E4F /* NSMutableString+ExtraMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableString+ExtraMethod.h"; sourceTree = "<group>"; };
+		7E0ED7191D373BBA00E33E4F /* NSString+ExtraMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ExtraMethod.h"; sourceTree = "<group>"; };
+		7E0ED71A1D373BBA00E33E4F /* NSMutableString+ExtraMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableString+ExtraMethod.m"; sourceTree = "<group>"; };
+		7E0ED71B1D373BBA00E33E4F /* NSString+ExtraMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ExtraMethod.m"; sourceTree = "<group>"; };
+		7E0ED71D1D373BBA00E33E4F /* EncryptManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncryptManager.swift; sourceTree = "<group>"; };
+		7E0ED71E1D373BBA00E33E4F /* LoginManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
+		7E0ED71F1D373BBA00E33E4F /* LogoutManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoutManager.swift; sourceTree = "<group>"; };
+		7E0ED7211D373BBA00E33E4F /* UIImage+Gif.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Gif.swift"; sourceTree = "<group>"; };
+		7E0ED72B1D373CC700E33E4F /* BoardingPassList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardingPassList.swift; sourceTree = "<group>"; };
+		7E0ED72C1D373CC700E33E4F /* CheckInList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckInList.swift; sourceTree = "<group>"; };
+		7E0ED72D1D373CC700E33E4F /* PNRList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PNRList.swift; sourceTree = "<group>"; };
+		7E0ED72E1D373CC700E33E4F /* UserList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserList.swift; sourceTree = "<group>"; };
+		7E0ED72F1D373CC700E33E4F /* FamilyAndFriendList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FamilyAndFriendList.swift; sourceTree = "<group>"; };
+		7E0ED7301D373CC700E33E4F /* FamilyAndFriendData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FamilyAndFriendData.swift; sourceTree = "<group>"; };
+		7E0ED7381D373DA300E33E4F /* CustomFloatLabelCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomFloatLabelCell.swift; sourceTree = "<group>"; };
+		7E0ED7391D373DA300E33E4F /* CustomCheckBoxCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCheckBoxCell.swift; sourceTree = "<group>"; };
+		7E0ED73A1D373DA300E33E4F /* CustomCheckBoxCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCheckBoxCell.xib; sourceTree = "<group>"; };
+		7E0ED7401D37422F00E33E4F /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SplashScreen.storyboard; sourceTree = "<group>"; };
+		7E0ED7411D37422F00E33E4F /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
+		7E0ED7451D3747CE00E33E4F /* SearchFlightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchFlightViewController.swift; sourceTree = "<group>"; };
+		7E0ED7471D37557100E33E4F /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		7E0ED74A1D37585000E33E4F /* BookFlight.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BookFlight.storyboard; sourceTree = "<group>"; };
+		7E0ED74C1D37589300E33E4F /* AddFlightDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddFlightDetailViewController.swift; sourceTree = "<group>"; };
+		7E0ED74F1D3758C400E33E4F /* CommonFlightDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonFlightDetailViewController.swift; sourceTree = "<group>"; };
+		7E0ED7521D37596700E33E4F /* DirectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionView.swift; sourceTree = "<group>"; };
+		7E0ED7531D37596700E33E4F /* FlightHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightHeaderView.swift; sourceTree = "<group>"; };
+		7E0ED7541D37596700E33E4F /* MHFlightHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MHFlightHeaderView.swift; sourceTree = "<group>"; };
+		7E0ED7551D37596700E33E4F /* PassengerHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassengerHeaderView.swift; sourceTree = "<group>"; };
+		7E0ED7561D37596700E33E4F /* PassengerHeaderViewButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassengerHeaderViewButton.swift; sourceTree = "<group>"; };
+		7E0ED7571D37596700E33E4F /* SectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
+		7E0ED7581D37596700E33E4F /* directionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = directionView.xib; sourceTree = "<group>"; };
+		7E0ED7591D37596700E33E4F /* FlightHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FlightHeader.xib; sourceTree = "<group>"; };
+		7E0ED75A1D37596700E33E4F /* FlightHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FlightHeaderView.xib; sourceTree = "<group>"; };
+		7E0ED75B1D37596700E33E4F /* MHFlightHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MHFlightHeaderView.xib; sourceTree = "<group>"; };
+		7E0ED75C1D37596700E33E4F /* MobileCheckInView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MobileCheckInView.xib; sourceTree = "<group>"; };
+		7E0ED75D1D37596700E33E4F /* PassengerHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PassengerHeader.xib; sourceTree = "<group>"; };
+		7E0ED75E1D37596700E33E4F /* PassengerHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PassengerHeaderView.xib; sourceTree = "<group>"; };
+		7E0ED75F1D37596700E33E4F /* SectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SectionView.xib; sourceTree = "<group>"; };
+		7E0ED76E1D375B1700E33E4F /* AddPassengerDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPassengerDetailViewController.swift; sourceTree = "<group>"; };
+		7E0ED7701D375B2800E33E4F /* CommonPassengerDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonPassengerDetailViewController.swift; sourceTree = "<group>"; };
+		7E0ED7721D375C8B00E33E4F /* AddContactDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddContactDetailViewController.swift; sourceTree = "<group>"; };
+		7E0ED7741D375C9700E33E4F /* CommonContactDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonContactDetailViewController.swift; sourceTree = "<group>"; };
+		7E0ED7761D375DF500E33E4F /* ObjC-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ObjC-Header.h"; sourceTree = "<group>"; };
+		7E0ED7771D375E1300E33E4F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7E0ED7791D375E1E00E33E4F /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		7E0ED77B1D375E2E00E33E4F /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		7E0ED77D1D375E4200E33E4F /* ExtensionFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionFile.swift; sourceTree = "<group>"; };
+		7E0ED77F1D3760DF00E33E4F /* AddSeatSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddSeatSelectionViewController.swift; sourceTree = "<group>"; };
+		7E0ED7811D3760FB00E33E4F /* CommonSeatSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonSeatSelectionViewController.swift; sourceTree = "<group>"; };
+		7E0ED7831D37612900E33E4F /* PaymentSummaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentSummaryViewController.swift; sourceTree = "<group>"; };
+		7E4DF4F91D3881BB00BC4E8B /* AddPaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPaymentViewController.swift; sourceTree = "<group>"; };
+		7E4DF4FB1D3881E400BC4E8B /* CommonPaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonPaymentViewController.swift; sourceTree = "<group>"; };
+		FE3195DA6CE8D2CB5342BDA8 /* Pods-AirAsia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirAsia.release.xcconfig"; path = "Pods/Target Support Files/Pods-AirAsia/Pods-AirAsia.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7E0ED6841D372BD600E33E4F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6EF5E574549208AF323D078 /* Pods_AirAsia.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0B167740B6FDA5E4B488FC14 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5B036AB3D48571EB3373E5C8 /* Pods_AirAsia.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7E0ED67E1D372BD500E33E4F = {
+			isa = PBXGroup;
+			children = (
+				7E0ED6891D372BD600E33E4F /* AirAsia */,
+				7E0ED6881D372BD600E33E4F /* Products */,
+				F9CDBC3296116EBE1B7E0017 /* Pods */,
+				0B167740B6FDA5E4B488FC14 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7E0ED6881D372BD600E33E4F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7E0ED6871D372BD600E33E4F /* AirAsia.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7E0ED6891D372BD600E33E4F /* AirAsia */ = {
+			isa = PBXGroup;
+			children = (
+				7E0ED7511D37594900E33E4F /* Header View */,
+				7E0ED74E1D37589C00E33E4F /* Common Class */,
+				7E0ED7491D37581700E33E4F /* Home */,
+				7E0ED7441D3747B500E33E4F /* Booking Flight */,
+				7E0ED73F1D37421000E33E4F /* Splash Screen */,
+				7E0ED73E1D373DC400E33E4F /* Home */,
+				7E0ED7371D373D8900E33E4F /* Custom XLForm */,
+				7E0ED72A1D373CB600E33E4F /* Realm Model */,
+				7E0ED7131D373B7700E33E4F /* Date Picker */,
+				7E0ED7021D3737A400E33E4F /* Custom Flight Picker */,
+				7E0ED7011D37379800E33E4F /* Custom Date Picker */,
+				7E0ED6E01D37377300E33E4F /* Custom Cell */,
+				7E0ED6BB1D37350000E33E4F /* Baseview */,
+				7E0ED6A01D37349A00E33E4F /* Supporting Files */,
+				7E0ED69F1D37348F00E33E4F /* Helper */,
+				7E0ED68A1D372BD700E33E4F /* AppDelegate.swift */,
+				7E0ED6901D372BD700E33E4F /* Main.storyboard */,
+			);
+			path = AirAsia;
+			sourceTree = "<group>";
+		};
+		7E0ED69F1D37348F00E33E4F /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				7E0ED7181D373BBA00E33E4F /* NSMutableString+ExtraMethod.h */,
+				7E0ED7191D373BBA00E33E4F /* NSString+ExtraMethod.h */,
+				7E0ED71A1D373BBA00E33E4F /* NSMutableString+ExtraMethod.m */,
+				7E0ED71B1D373BBA00E33E4F /* NSString+ExtraMethod.m */,
+				7E0ED71D1D373BBA00E33E4F /* EncryptManager.swift */,
+				7E0ED71E1D373BBA00E33E4F /* LoginManager.swift */,
+				7E0ED71F1D373BBA00E33E4F /* LogoutManager.swift */,
+				7E0ED7211D373BBA00E33E4F /* UIImage+Gif.swift */,
+				7E0ED6B71D3734F800E33E4F /* FireflyAPI.swift */,
+				7E0ED6B81D3734F800E33E4F /* InitialLoadManager.swift */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
+		7E0ED6A01D37349A00E33E4F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7E0ED7761D375DF500E33E4F /* ObjC-Header.h */,
+				7E0ED7791D375E1E00E33E4F /* Localizable.strings */,
+				7E0ED77D1D375E4200E33E4F /* ExtensionFile.swift */,
+				7E0ED77B1D375E2E00E33E4F /* Constant.swift */,
+				7E0ED7771D375E1300E33E4F /* GoogleService-Info.plist */,
+				7E0ED6C01D3735C700E33E4F /* Assets.xcassets */,
+				7E0ED6981D372BD700E33E4F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7E0ED6BB1D37350000E33E4F /* Baseview */ = {
+			isa = PBXGroup;
+			children = (
+				7E0ED6BC1D37351C00E33E4F /* BaseViewController.swift */,
+				7E0ED6BD1D37351C00E33E4F /* BaseXLFormViewController.swift */,
+			);
+			name = Baseview;
+			sourceTree = "<group>";
+		};
+		7E0ED6E01D37377300E33E4F /* Custom Cell */ = {
+			isa = PBXGroup;
+			children = (
+				7E0ED6E11D37378800E33E4F /* CustomChangeFlightTableViewCell.swift */,
+				7E0ED6E21D37378800E33E4F /* CustomChooseSeatTableViewCell.swift */,
+				7E0ED6E31D37378800E33E4F /* CustomFlightDetailTableViewCell.swift */,
+				7E0ED6E41D37378800E33E4F /* CustomHomeMenuTableViewCell.swift */,
+				7E0ED6E51D37378800E33E4F /* CustomLoginManageFlightTableViewCell.swift */,
+				7E0ED6E61D37378800E33E4F /* CustomManageFlightMenuTableViewCell.swift */,
+				7E0ED6E71D37378800E33E4F /* CustomMHFlightDetailTableViewCell.swift */,
+				7E0ED6E81D37378800E33E4F /* CustomPasswordExpiredlTableViewCell.swift */,
+				7E0ED6E91D37378800E33E4F /* CustomPaymentSummaryTableViewCell.swift */,
+				7E0ED6EA1D37378800E33E4F /* CustomPaymentTableViewCell.swift */,
+				7E0ED6EB1D37378800E33E4F /* CustomPersonalDetailTableViewCell.swift */,
+				7E0ED6EC1D37378800E33E4F /* CustomSearchFlightTableViewCell.swift */,
+				7E0ED6ED1D37378800E33E4F /* CustomSeatSelectionTableViewCell.swift */,
+				7E0ED6EE1D37378800E33E4F /* MobileTermTableViewCell.swift */,
+				7E0ED6EF1D37378800E33E4F /* SideMenuTableViewCell.swift */,
+				7E0ED6F01D37378800E33E4F /* CustomFamilyListTableViewCell.swift */,
+			);
+			name = "Custom Cell";
+			sourceTree = "<group>";
+		};
+		7E0ED7011D37379800E33E4F /* Custom Date Picker */ = {
+			isa = PBXGroup;
+			children = (
+				7E0ED7031D3737B500E33E4F /* RSDFCustomDatePickerCollectionView.swift */,
+				7E0ED7041D3737B500E33E4F /* RSDFCustomDatePickerCollectionViewLayout.swift */,
+				7E0ED7051D3737B500E33E4F /* RSDFCustomDatePickerDayCell.swift */,
+				7E0ED7061D3737B500E33E4F /* RSDFCustomDatePickerDaysOfWeekView.swift */,
+				7E0ED7071D3737B500E33E4F /* RSDFCustomDatePickerMonthHeader.swift */,
+				7E0ED7081D3737B500E33E4F /* RSDFCustomDatePickerView.swift */,
+			);
+			name = "Custom Date Picker";
+			sourceTree = "<group>";
+		};
+		7E0ED7021D3737A400E33E4F /* Custom Flight Picker */ = {
+			isa = PBXGroup;
+			children = (
+				7E0ED70F1D3737C600E33E4F /* CustomFlightPicker.storyboard */,
+				7E0ED7101D3737C600E33E4F /* CustomFlightPickerViewController.swift */,
+			);
+			name = "Custom Flight Picker";
+			sourceTree = "<group>";
+		};
+		7E0ED7131D373B7700E33E4F /* Date Picker */ = {
+			isa = PBXGroup;
+			children = (
+				7E0ED7141D373B8800E33E4F /* RSDFDatePicker.storyboard */,
+				7E0ED7151D373B8800E33E4F /* RSDFDatePickerViewController.swift */,
+			);
+			name = "Date Picker";
+			sourceTree = "<group>";
+		};
+		7E0ED72A1D373CB600E33E4F /* Realm Model */ = {
+			isa = PBXGroup;
+			children = (
+				7E0ED72B1D373CC700E33E4F /* BoardingPassList.swift */,
+				7E0ED72C1D373CC700E33E4F /* CheckInList.swift */,
+				7E0ED72D1D373CC700E33E4F /* PNRList.swift */,
+				7E0ED72E1D373CC700E33E4F /* UserList.swift */,
+				7E0ED72F1D373CC700E33E4F /* FamilyAndFriendList.swift */,
+				7E0ED7301D373CC700E33E4F /* FamilyAndFriendData.swift */,
+			);
+			name = "Realm Model";
+			sourceTree = "<group>";
+		};
+		7E0ED7371D373D8900E33E4F /* Custom XLForm */ = {
+			isa = PBXGroup;
+			children = (
+				7E0ED7381D373DA300E33E4F /* CustomFloatLabelCell.swift */,
+				7E0ED7391D373DA300E33E4F /* CustomCheckBoxCell.swift */,
+				7E0ED73A1D373DA300E33E4F /* CustomCheckBoxCell.xib */,
+			);
+			name = "Custom XLForm";
+			sourceTree = "<group>";
+		};
+		7E0ED73E1D373DC400E33E4F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		7E0ED73F1D37421000E33E4F /* Splash Screen */ = {
+			isa = PBXGroup;
+			children = (
+				7E0ED7401D37422F00E33E4F /* SplashScreen.storyboard */,
+				7E0ED7411D37422F00E33E4F /* LaunchScreenViewController.swift */,
+				7E0ED6951D372BD700E33E4F /* LaunchScreen.storyboard */,
+			);
+			name = "Splash Screen";
+			sourceTree = "<group>";
+		};
+		7E0ED7441D3747B500E33E4F /* Booking Flight */ = {
+			isa = PBXGroup;
+			children = (
+				7E0ED74A1D37585000E33E4F /* BookFlight.storyboard */,
+				7E0ED7451D3747CE00E33E4F /* SearchFlightViewController.swift */,
+				7E0ED74C1D37589300E33E4F /* AddFlightDetailViewController.swift */,
+				7E0ED76E1D375B1700E33E4F /* AddPassengerDetailViewController.swift */,
+				7E0ED7721D375C8B00E33E4F /* AddContactDetailViewController.swift */,
+				7E0ED77F1D3760DF00E33E4F /* AddSeatSelectionViewController.swift */,
+				7E0ED7831D37612900E33E4F /* PaymentSummaryViewController.swift */,
+				7E4DF4F91D3881BB00BC4E8B /* AddPaymentViewController.swift */,
+			);
+			name = "Booking Flight";
+			sourceTree = "<group>";
+		};
+		7E0ED7491D37581700E33E4F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				7E0ED7471D37557100E33E4F /* HomeViewController.swift */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		7E0ED74E1D37589C00E33E4F /* Common Class */ = {
+			isa = PBXGroup;
+			children = (
+				7E0ED7701D375B2800E33E4F /* CommonPassengerDetailViewController.swift */,
+				7E0ED74F1D3758C400E33E4F /* CommonFlightDetailViewController.swift */,
+				7E0ED7741D375C9700E33E4F /* CommonContactDetailViewController.swift */,
+				7E0ED7811D3760FB00E33E4F /* CommonSeatSelectionViewController.swift */,
+				7E4DF4FB1D3881E400BC4E8B /* CommonPaymentViewController.swift */,
+			);
+			name = "Common Class";
+			sourceTree = "<group>";
+		};
+		7E0ED7511D37594900E33E4F /* Header View */ = {
+			isa = PBXGroup;
+			children = (
+				7E0ED7521D37596700E33E4F /* DirectionView.swift */,
+				7E0ED7531D37596700E33E4F /* FlightHeaderView.swift */,
+				7E0ED7541D37596700E33E4F /* MHFlightHeaderView.swift */,
+				7E0ED7551D37596700E33E4F /* PassengerHeaderView.swift */,
+				7E0ED7561D37596700E33E4F /* PassengerHeaderViewButton.swift */,
+				7E0ED7571D37596700E33E4F /* SectionView.swift */,
+				7E0ED7581D37596700E33E4F /* directionView.xib */,
+				7E0ED7591D37596700E33E4F /* FlightHeader.xib */,
+				7E0ED75A1D37596700E33E4F /* FlightHeaderView.xib */,
+				7E0ED75B1D37596700E33E4F /* MHFlightHeaderView.xib */,
+				7E0ED75C1D37596700E33E4F /* MobileCheckInView.xib */,
+				7E0ED75D1D37596700E33E4F /* PassengerHeader.xib */,
+				7E0ED75E1D37596700E33E4F /* PassengerHeaderView.xib */,
+				7E0ED75F1D37596700E33E4F /* SectionView.xib */,
+			);
+			name = "Header View";
+			sourceTree = "<group>";
+		};
+		F9CDBC3296116EBE1B7E0017 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6BB489C38FF6BE863CE81BA0 /* Pods-AirAsia.debug.xcconfig */,
+				FE3195DA6CE8D2CB5342BDA8 /* Pods-AirAsia.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7E0ED6861D372BD600E33E4F /* AirAsia */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E0ED69B1D372BD700E33E4F /* Build configuration list for PBXNativeTarget "AirAsia" */;
+			buildPhases = (
+				9CCAA0B4C03AE9325D063171 /* Check Pods Manifest.lock */,
+				7E0ED6831D372BD600E33E4F /* Sources */,
+				7E0ED6841D372BD600E33E4F /* Frameworks */,
+				7E0ED6851D372BD600E33E4F /* Resources */,
+				8FF671039A2C8C38C93D1620 /* Embed Pods Frameworks */,
+				A98C0F563301C1520531C207 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AirAsia;
+			productName = AirAsia;
+			productReference = 7E0ED6871D372BD600E33E4F /* AirAsia.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7E0ED67F1D372BD600E33E4F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Me-tech";
+				TargetAttributes = {
+					7E0ED6861D372BD600E33E4F = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 7E0ED6821D372BD600E33E4F /* Build configuration list for PBXProject "AirAsia" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7E0ED67E1D372BD500E33E4F;
+			productRefGroup = 7E0ED6881D372BD600E33E4F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7E0ED6861D372BD600E33E4F /* AirAsia */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7E0ED6851D372BD600E33E4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E0ED7111D3737C600E33E4F /* CustomFlightPicker.storyboard in Resources */,
+				7E0ED7421D37422F00E33E4F /* SplashScreen.storyboard in Resources */,
+				7E0ED6971D372BD700E33E4F /* LaunchScreen.storyboard in Resources */,
+				7E0ED7161D373B8800E33E4F /* RSDFDatePicker.storyboard in Resources */,
+				7E0ED76B1D37596700E33E4F /* PassengerHeader.xib in Resources */,
+				7E0ED76A1D37596700E33E4F /* MobileCheckInView.xib in Resources */,
+				7E0ED6C11D3735C700E33E4F /* Assets.xcassets in Resources */,
+				7E0ED7661D37596700E33E4F /* directionView.xib in Resources */,
+				7E0ED7671D37596700E33E4F /* FlightHeader.xib in Resources */,
+				7E0ED76C1D37596700E33E4F /* PassengerHeaderView.xib in Resources */,
+				7E0ED7781D375E1300E33E4F /* GoogleService-Info.plist in Resources */,
+				7E0ED74B1D37585000E33E4F /* BookFlight.storyboard in Resources */,
+				7E0ED73D1D373DA300E33E4F /* CustomCheckBoxCell.xib in Resources */,
+				7E0ED6921D372BD700E33E4F /* Main.storyboard in Resources */,
+				7E0ED7691D37596700E33E4F /* MHFlightHeaderView.xib in Resources */,
+				7E0ED77A1D375E1E00E33E4F /* Localizable.strings in Resources */,
+				7E0ED76D1D37596700E33E4F /* SectionView.xib in Resources */,
+				7E0ED7681D37596700E33E4F /* FlightHeaderView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8FF671039A2C8C38C93D1620 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AirAsia/Pods-AirAsia-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9CCAA0B4C03AE9325D063171 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A98C0F563301C1520531C207 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AirAsia/Pods-AirAsia-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7E0ED6831D372BD600E33E4F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E0ED73C1D373DA300E33E4F /* CustomCheckBoxCell.swift in Sources */,
+				7E0ED70E1D3737B500E33E4F /* RSDFCustomDatePickerView.swift in Sources */,
+				7E0ED7501D3758C400E33E4F /* CommonFlightDetailViewController.swift in Sources */,
+				7E0ED6FB1D37378800E33E4F /* CustomPersonalDetailTableViewCell.swift in Sources */,
+				7E0ED7461D3747CE00E33E4F /* SearchFlightViewController.swift in Sources */,
+				7E0ED6F41D37378800E33E4F /* CustomHomeMenuTableViewCell.swift in Sources */,
+				7E0ED7291D373BBA00E33E4F /* UIImage+Gif.swift in Sources */,
+				7E0ED7821D3760FB00E33E4F /* CommonSeatSelectionViewController.swift in Sources */,
+				7E0ED77E1D375E4200E33E4F /* ExtensionFile.swift in Sources */,
+				7E0ED7001D37378800E33E4F /* CustomFamilyListTableViewCell.swift in Sources */,
+				7E0ED70D1D3737B500E33E4F /* RSDFCustomDatePickerMonthHeader.swift in Sources */,
+				7E0ED70C1D3737B500E33E4F /* RSDFCustomDatePickerDaysOfWeekView.swift in Sources */,
+				7E0ED7261D373BBA00E33E4F /* LoginManager.swift in Sources */,
+				7E0ED6F51D37378800E33E4F /* CustomLoginManageFlightTableViewCell.swift in Sources */,
+				7E0ED7481D37557100E33E4F /* HomeViewController.swift in Sources */,
+				7E0ED7171D373B8900E33E4F /* RSDFDatePickerViewController.swift in Sources */,
+				7E0ED6F91D37378800E33E4F /* CustomPaymentSummaryTableViewCell.swift in Sources */,
+				7E0ED70A1D3737B500E33E4F /* RSDFCustomDatePickerCollectionViewLayout.swift in Sources */,
+				7E0ED6B91D3734F800E33E4F /* FireflyAPI.swift in Sources */,
+				7E0ED70B1D3737B500E33E4F /* RSDFCustomDatePickerDayCell.swift in Sources */,
+				7E0ED6F81D37378800E33E4F /* CustomPasswordExpiredlTableViewCell.swift in Sources */,
+				7E0ED7341D373CC700E33E4F /* UserList.swift in Sources */,
+				7E0ED7631D37596700E33E4F /* PassengerHeaderView.swift in Sources */,
+				7E0ED7711D375B2800E33E4F /* CommonPassengerDetailViewController.swift in Sources */,
+				7E0ED6FD1D37378800E33E4F /* CustomSeatSelectionTableViewCell.swift in Sources */,
+				7E0ED7801D3760DF00E33E4F /* AddSeatSelectionViewController.swift in Sources */,
+				7E0ED7331D373CC700E33E4F /* PNRList.swift in Sources */,
+				7E0ED7751D375C9700E33E4F /* CommonContactDetailViewController.swift in Sources */,
+				7E0ED7621D37596700E33E4F /* MHFlightHeaderView.swift in Sources */,
+				7E0ED6F11D37378800E33E4F /* CustomChangeFlightTableViewCell.swift in Sources */,
+				7E0ED6BA1D3734F800E33E4F /* InitialLoadManager.swift in Sources */,
+				7E4DF4FA1D3881BB00BC4E8B /* AddPaymentViewController.swift in Sources */,
+				7E0ED77C1D375E2E00E33E4F /* Constant.swift in Sources */,
+				7E0ED76F1D375B1700E33E4F /* AddPassengerDetailViewController.swift in Sources */,
+				7E0ED6FA1D37378800E33E4F /* CustomPaymentTableViewCell.swift in Sources */,
+				7E0ED7091D3737B500E33E4F /* RSDFCustomDatePickerCollectionView.swift in Sources */,
+				7E0ED7431D37422F00E33E4F /* LaunchScreenViewController.swift in Sources */,
+				7E0ED7351D373CC700E33E4F /* FamilyAndFriendList.swift in Sources */,
+				7E0ED6BF1D37351C00E33E4F /* BaseXLFormViewController.swift in Sources */,
+				7E0ED73B1D373DA300E33E4F /* CustomFloatLabelCell.swift in Sources */,
+				7E0ED74D1D37589300E33E4F /* AddFlightDetailViewController.swift in Sources */,
+				7E0ED6BE1D37351C00E33E4F /* BaseViewController.swift in Sources */,
+				7E0ED6F31D37378800E33E4F /* CustomFlightDetailTableViewCell.swift in Sources */,
+				7E0ED7271D373BBA00E33E4F /* LogoutManager.swift in Sources */,
+				7E0ED7221D373BBA00E33E4F /* NSMutableString+ExtraMethod.m in Sources */,
+				7E0ED68B1D372BD700E33E4F /* AppDelegate.swift in Sources */,
+				7E0ED6F21D37378800E33E4F /* CustomChooseSeatTableViewCell.swift in Sources */,
+				7E0ED7311D373CC700E33E4F /* BoardingPassList.swift in Sources */,
+				7E0ED7121D3737C600E33E4F /* CustomFlightPickerViewController.swift in Sources */,
+				7E0ED7251D373BBA00E33E4F /* EncryptManager.swift in Sources */,
+				7E0ED6FC1D37378800E33E4F /* CustomSearchFlightTableViewCell.swift in Sources */,
+				7E0ED7731D375C8B00E33E4F /* AddContactDetailViewController.swift in Sources */,
+				7E0ED7361D373CC700E33E4F /* FamilyAndFriendData.swift in Sources */,
+				7E0ED7231D373BBA00E33E4F /* NSString+ExtraMethod.m in Sources */,
+				7E0ED7641D37596700E33E4F /* PassengerHeaderViewButton.swift in Sources */,
+				7E0ED6F71D37378800E33E4F /* CustomMHFlightDetailTableViewCell.swift in Sources */,
+				7E0ED6F61D37378800E33E4F /* CustomManageFlightMenuTableViewCell.swift in Sources */,
+				7E0ED6FE1D37378800E33E4F /* MobileTermTableViewCell.swift in Sources */,
+				7E0ED7611D37596700E33E4F /* FlightHeaderView.swift in Sources */,
+				7E0ED6FF1D37378800E33E4F /* SideMenuTableViewCell.swift in Sources */,
+				7E0ED7651D37596700E33E4F /* SectionView.swift in Sources */,
+				7E4DF4FC1D3881E400BC4E8B /* CommonPaymentViewController.swift in Sources */,
+				7E0ED7841D37612900E33E4F /* PaymentSummaryViewController.swift in Sources */,
+				7E0ED7601D37596700E33E4F /* DirectionView.swift in Sources */,
+				7E0ED7321D373CC700E33E4F /* CheckInList.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7E0ED6901D372BD700E33E4F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E0ED6911D372BD700E33E4F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7E0ED6951D372BD700E33E4F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E0ED6961D372BD700E33E4F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7E0ED6991D372BD700E33E4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7E0ED69A1D372BD700E33E4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7E0ED69C1D372BD700E33E4F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BB489C38FF6BE863CE81BA0 /* Pods-AirAsia.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = AirAsia/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.me-tech.my.AirAsia";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7E0ED69D1D372BD700E33E4F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE3195DA6CE8D2CB5342BDA8 /* Pods-AirAsia.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = AirAsia/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.me-tech.my.AirAsia";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7E0ED6821D372BD600E33E4F /* Build configuration list for PBXProject "AirAsia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E0ED6991D372BD700E33E4F /* Debug */,
+				7E0ED69A1D372BD700E33E4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E0ED69B1D372BD700E33E4F /* Build configuration list for PBXNativeTarget "AirAsia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E0ED69C1D372BD700E33E4F /* Debug */,
+				7E0ED69D1D372BD700E33E4F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7E0ED67F1D372BD600E33E4F /* Project object */;
+}

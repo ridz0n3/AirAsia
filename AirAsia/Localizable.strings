@@ -1,0 +1,40 @@
+/* 
+  Localizable.strings
+  FireflyMobileApp
+
+  Created by ME-Tech MacPro User 2 on 2/25/16.
+  Copyright © 2016 Me-tech. All rights reserved.
+*/
+
+//Menu
+
+LabelMenuHome = "Home";
+LabelMenuLogin = "Login";
+LabelMenuLogout = "Logout";
+LabelMenuUpdateInformation = "Update Information";
+LabelMenuRegister = "Register";
+LabelMenuAbout = "About";
+LabelMenuFAQ = "FAQ";
+
+//HomeViewController
+
+LabelHomeBookFlight = "BOOK FLIGHT";
+LabelHomeManageFlight = "MANAGE FLIGHT";
+LabelHomeMobileCheckIn = "MOBILE CHECK-IN";
+LabelHomeBoardingPass = "BOARDING PASS";
+
+
+//Error Message
+
+LabelErrorSelectSeat = "Please select Seat First";
+LabelErrorGoingFlight = "Please select a fare for your going flight.";
+LabelErrorReturnFlight = "Please select a fare for your return flight.";
+
+//Update Information & Registration
+
+LabelLogin = "LOGIN INFORMATION";
+LabelBasic = "BASIC INFORMATION";
+LabelPersonal = "PERSONAL INFORMATION";
+LabelAddress = "ADDRESS INFORMATION";
+LabelContact = "CONTACT INFORMATION";
+LabelLoyalty = "LOYALTY PROGRAMME";

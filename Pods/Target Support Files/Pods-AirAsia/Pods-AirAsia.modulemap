@@ -1,0 +1,6 @@
+framework module Pods_AirAsia {
+  umbrella header "Pods-AirAsia-umbrella.h"
+
+  export *
+  module * { export * }
+}
