@@ -27,7 +27,7 @@ class RSDFCustomDatePickerDayCell: RSDFDatePickerDayCell {
     }
     
     override func selectedDayImageColor() -> UIColor {
-        return UIColor(red: 240.0/255.0, green: 109.0/255.0, blue: 34.0/255.0, alpha: 1.0)
+        return UIColor(red: 255.0/255.0, green: 0/255.0, blue: 0/255.0, alpha: 1.0)
     }
     
     override func selectedDayLabelFont() -> UIFont {
@@ -51,7 +51,7 @@ class RSDFCustomDatePickerDayCell: RSDFDatePickerDayCell {
     }
     
     override func selectedTodayImageColor() -> UIColor {
-        return UIColor(red: 240.0/255.0, green: 109.0/255.0, blue: 34.0/255.0, alpha: 1.0)
+        return UIColor(red: 255/255.0, green: 0/255.0, blue: 0/255.0, alpha: 1.0)
     }
     
     override func selectedTodayLabelFont() -> UIFont {

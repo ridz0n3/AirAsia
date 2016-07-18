@@ -130,7 +130,7 @@ class CommonFlightDetailViewController: BaseViewController {
                 let flightBasic = flightData!["basic_class"]!.dictionary
                 let flightFlex = flightData!["flex_class"]!.dictionary
                 
-                cell.flightNumber.text = String(format: "FLIGHT NO. FY %@", flightData!["flight_number"]!.string!)
+                cell.flightNumber.text = String(format: "FLIGHT NO. AK %@", flightData!["flight_number"]!.string!)
                 cell.departureAirportLbl.text = "\(flightDict!["departure_station_name"]!.stringValue)"
                 cell.arrivalAirportLbl.text = "\(flightDict!["arrival_station_name"]!.stringValue)"
                 cell.departureTimeLbl.text = flightData!["departure_time"]!.string
@@ -148,7 +148,7 @@ class CommonFlightDetailViewController: BaseViewController {
                         
                     }else{
                         //if flightBasic!["discount"]?.floatValue == 0{
-                            cell.priceLbl.text = String(format: "%.0f Pts", ((flightBasic!["total_fare"]?.floatValue)! * 1.5) + (flightBasic!["total_fare"]?.floatValue)!)
+                            cell.priceLbl.text = String(format: "%.0f Pts", ((flightBasic!["total_fare"]?.floatValue)! * 2.5) - (flightBasic!["total_fare"]?.floatValue)!)
                             cell.promoPriceLbl.hidden = true
                             cell.checkFlight.hidden = false
                             cell.strikeDegree.hidden = true

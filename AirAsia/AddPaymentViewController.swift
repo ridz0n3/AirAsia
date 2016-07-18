@@ -15,7 +15,9 @@ class AddPaymentViewController: CommonPaymentViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         //AnalyticsManager.sharedInstance.logScreen(GAConstants.addPaymentScreen)
-        totalDueLbl.text = String(format: "%.2f MYR", totalDue)//"\(totalDue) MYR"
+        let valArr = ("\(totalDue)").componentsSeparatedByString(" ")
+        let point = (Float(valArr[0])! * 2.5) - Float(valArr[0])!
+        totalDueLbl.text = String(format: "%.0f Pts", point)//"\(totalDue) MYR"
         
     }
     

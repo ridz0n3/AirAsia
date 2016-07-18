@@ -92,7 +92,7 @@ class PaymentSummaryViewController: BaseViewController, UITableViewDelegate, UIT
         if indexPath.section == 0{
             let cell = self.paymentTableView.dequeueReusableCellWithIdentifier("FlightDetailCell", forIndexPath: indexPath) as! CustomPaymentSummaryTableViewCell
             
-            let str = "\(flightDetail[indexPath.row]["date"] as! String)\n\(flightDetail[indexPath.row]["station"] as! String)\n\(flightDetail[indexPath.row]["flight_number"] as! String)\n"
+            let str = "\(flightDetail[indexPath.row]["date"] as! String)\n\(flightDetail[indexPath.row]["station"] as! String)\n\((flightDetail[indexPath.row]["flight_number"] as! String).stringByReplacingOccurrencesOfString("FY", withString: "AK"))\n"
             
             let attrString = NSMutableAttributedString(string: str)
             if flightDetail[indexPath.row]["flight_note"] != nil{
@@ -118,7 +118,10 @@ class PaymentSummaryViewController: BaseViewController, UITableViewDelegate, UIT
             var taxData = String()
             
             for (key, value) in tax! {
-                 taxData += "\((key as! String).stringByReplacingOccurrencesOfString("_", withString: " ").capitalizedString): \(value as! String)\n"
+                let valArr = (value as! String).componentsSeparatedByString(" ")
+                let point = (Float(valArr[0])! * 2.5) - Float(valArr[0])!
+                
+                 taxData += "\((key as! String).stringByReplacingOccurrencesOfString("_", withString: " ").capitalizedString): \(String(format: "%.0f",point)) Pts\n"
             }
             
             if let infant = detail["infant"] as? String{
@@ -130,9 +133,21 @@ class PaymentSummaryViewController: BaseViewController, UITableViewDelegate, UIT
             }
             
             cell.flightDestination.text = detail["title"] as? String
-            cell.guestPriceLbl.text = detail["total_guest"] as? String
-            cell.guestLbl.text = detail["guest"] as? String
-            cell.taxesPrice.text = detail["total_taxes_or_fees"] as? String
+            
+            let valArr1 = (detail["total_guest"] as? String)!.componentsSeparatedByString(" ")
+            let point1 = (Float(valArr1[0])! * 2.5) - Float(valArr1[0])!
+            
+            cell.guestPriceLbl.text = "\(String(format: "%.0f",point1)) Pts"//detail["total_guest"] as? String
+            
+            let valArr2 = (detail["guest"] as? String)!.componentsSeparatedByString(" @ ")
+            let valArr3 = (valArr2[1]).componentsSeparatedByString(" ")
+            let point2 = (Float(valArr3[0])! * 2.5) - Float(valArr3[0])!
+            cell.guestLbl.text = "\(valArr2[0]) @ \(String(format: "%.0f",point2)) Pts"//detail["guest"] as? String
+            
+            let valArr = (detail["total_taxes_or_fees"] as? String)!.componentsSeparatedByString(" ")
+            let point = (Float(valArr[0])! * 2.5) - Float(valArr[0])!
+            
+            cell.taxesPrice.text = "\(String(format: "%.0f",point)) Pts"//detail["total_taxes_or_fees"] as? String
             
             cell.detailBtn.addTarget(self, action: #selector(PaymentSummaryViewController.detailBtnPressed(_:)), forControlEvents: .TouchUpInside)
             cell.detailBtn.accessibilityHint = taxData
@@ -147,14 +162,17 @@ class PaymentSummaryViewController: BaseViewController, UITableViewDelegate, UIT
             
             if serviceDetail.count != 0{
                 cell.serviceLbl.text = serviceDetail[indexPath.row]["service_name"] as? String
-                cell.servicePriceLbl.text = serviceDetail[indexPath.row]["service_price"] as? String
+                let valArr = (serviceDetail[indexPath.row]["service_price"] as? String)!.componentsSeparatedByString(" ")
+                let point = (Float(valArr[0])! * 2.5) - Float(valArr[0])!
+                cell.servicePriceLbl.text = "\(String(format: "%.0f",point)) Pts"//serviceDetail[indexPath.row]["service_price"] as? String
             }
             
             return cell
         }else{
             let cell = self.paymentTableView.dequeueReusableCellWithIdentifier("TotalCell", forIndexPath: indexPath) as! CustomPaymentSummaryTableViewCell
-            
-            cell.totalPriceLbl.text = totalPrice
+            let valArr = (totalPrice).componentsSeparatedByString(" ")
+            let point = (Float(valArr[0])! * 2.5) - Float(valArr[0])!
+            cell.totalPriceLbl.text = "\(String(format: "%.0f",point)) Pts"//totalPrice
             
             return cell
         }
