@@ -94,6 +94,7 @@
 		7EAF87831D3DB87D00741F4F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EAF87821D3DB87D00741F4F /* CoreLocation.framework */; };
 		7EAF87851D3DBC5200741F4F /* BeaconManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAF87841D3DBC5200741F4F /* BeaconManager.swift */; };
 		C6EF5E574549208AF323D078 /* Pods_AirAsia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B036AB3D48571EB3373E5C8 /* Pods_AirAsia.framework */; };
+		FCCF58CE1D3DD6EC00D40FEA /* AnalyticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCF58CD1D3DD6EC00D40FEA /* AnalyticsManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -190,6 +191,7 @@
 		7E4DF4FB1D3881E400BC4E8B /* CommonPaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonPaymentViewController.swift; sourceTree = "<group>"; };
 		7EAF87821D3DB87D00741F4F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		7EAF87841D3DBC5200741F4F /* BeaconManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconManager.swift; sourceTree = "<group>"; };
+		FCCF58CD1D3DD6EC00D40FEA /* AnalyticsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticsManager.swift; sourceTree = "<group>"; };
 		FE3195DA6CE8D2CB5342BDA8 /* Pods-AirAsia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirAsia.release.xcconfig"; path = "Pods/Target Support Files/Pods-AirAsia/Pods-AirAsia.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -272,6 +274,7 @@
 				7E0ED6B71D3734F800E33E4F /* FireflyAPI.swift */,
 				7E0ED6B81D3734F800E33E4F /* InitialLoadManager.swift */,
 				7EAF87841D3DBC5200741F4F /* BeaconManager.swift */,
+				FCCF58CD1D3DD6EC00D40FEA /* AnalyticsManager.swift */,
 			);
 			name = Helper;
 			sourceTree = "<group>";
@@ -631,6 +634,7 @@
 				7E0ED7711D375B2800E33E4F /* CommonPassengerDetailViewController.swift in Sources */,
 				7E0ED6FD1D37378800E33E4F /* CustomSeatSelectionTableViewCell.swift in Sources */,
 				7E0ED7801D3760DF00E33E4F /* AddSeatSelectionViewController.swift in Sources */,
+				FCCF58CE1D3DD6EC00D40FEA /* AnalyticsManager.swift in Sources */,
 				7E0ED7331D373CC700E33E4F /* PNRList.swift in Sources */,
 				7E0ED7751D375C9700E33E4F /* CommonContactDetailViewController.swift in Sources */,
 				7E0ED7621D37596700E33E4F /* MHFlightHeaderView.swift in Sources */,

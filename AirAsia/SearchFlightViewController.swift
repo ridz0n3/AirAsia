@@ -47,6 +47,8 @@ class SearchFlightViewController: BaseViewController, UITableViewDataSource, UIT
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(SearchFlightViewController.departurePicker(_:)), name: "departureSelected", object: nil)
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(SearchFlightViewController.arrivalPicker(_:)), name: "arrivalSelected", object: nil)
+        
+        AnalyticsManager.sharedInstance.logScreen(GAConstants.searchFlightScreen)
         // Do any additional setup after loading the view.
     }
     
