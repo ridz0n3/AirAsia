@@ -37,8 +37,41 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         
         RLMRealmConfiguration.setDefaultConfiguration(config)
+        BeaconManager.sharedInstance.setBeacon()
+        
+        if #available(iOS 8.0, *) {
+            if(application.respondsToSelector(#selector(UIApplication.registerUserNotificationSettings(_:)))) {
+                if #available(iOS 8.0, *) {
+                    application.registerUserNotificationSettings(
+                        UIUserNotificationSettings(
+                            forTypes: [UIUserNotificationType.Alert, UIUserNotificationType.Sound],
+                            categories: nil
+                        )
+                    )
+                } else {
+                    // Fallback on earlier versions
+                }
+            }
+        } else {
+            // Fallback on earlier versions
+        }
         
         return true
+    }
+    
+    func application(application: UIApplication, didReceiveLocalNotification notification: UILocalNotification) {
+        
+        print("test")
+        let appDelegate = UIApplication.sharedApplication().keyWindow
+        let root = appDelegate?.rootViewController
+        viewsController = root!
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let loadingVC = storyboard.instantiateViewControllerWithIdentifier("LogoVC") as! NotificationViewController
+        loadingVC.view.backgroundColor = UIColor.clearColor()
+        
+        viewsController.presentViewController(loadingVC, animated: true, completion: nil)
+        
     }
 
     func applicationWillResignActive(application: UIApplication) {

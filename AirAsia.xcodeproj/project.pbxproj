@@ -88,8 +88,11 @@
 		7E0ED7801D3760DF00E33E4F /* AddSeatSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0ED77F1D3760DF00E33E4F /* AddSeatSelectionViewController.swift */; };
 		7E0ED7821D3760FB00E33E4F /* CommonSeatSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0ED7811D3760FB00E33E4F /* CommonSeatSelectionViewController.swift */; };
 		7E0ED7841D37612900E33E4F /* PaymentSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0ED7831D37612900E33E4F /* PaymentSummaryViewController.swift */; };
+		7E1B33DA1D3DCBDD00766BEA /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E1B33D91D3DCBDD00766BEA /* NotificationViewController.swift */; };
 		7E4DF4FA1D3881BB00BC4E8B /* AddPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4DF4F91D3881BB00BC4E8B /* AddPaymentViewController.swift */; };
 		7E4DF4FC1D3881E400BC4E8B /* CommonPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4DF4FB1D3881E400BC4E8B /* CommonPaymentViewController.swift */; };
+		7EAF87831D3DB87D00741F4F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EAF87821D3DB87D00741F4F /* CoreLocation.framework */; };
+		7EAF87851D3DBC5200741F4F /* BeaconManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EAF87841D3DBC5200741F4F /* BeaconManager.swift */; };
 		C6EF5E574549208AF323D078 /* Pods_AirAsia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B036AB3D48571EB3373E5C8 /* Pods_AirAsia.framework */; };
 /* End PBXBuildFile section */
 
@@ -182,8 +185,11 @@
 		7E0ED77F1D3760DF00E33E4F /* AddSeatSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddSeatSelectionViewController.swift; sourceTree = "<group>"; };
 		7E0ED7811D3760FB00E33E4F /* CommonSeatSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonSeatSelectionViewController.swift; sourceTree = "<group>"; };
 		7E0ED7831D37612900E33E4F /* PaymentSummaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentSummaryViewController.swift; sourceTree = "<group>"; };
+		7E1B33D91D3DCBDD00766BEA /* NotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		7E4DF4F91D3881BB00BC4E8B /* AddPaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPaymentViewController.swift; sourceTree = "<group>"; };
 		7E4DF4FB1D3881E400BC4E8B /* CommonPaymentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonPaymentViewController.swift; sourceTree = "<group>"; };
+		7EAF87821D3DB87D00741F4F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		7EAF87841D3DBC5200741F4F /* BeaconManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeaconManager.swift; sourceTree = "<group>"; };
 		FE3195DA6CE8D2CB5342BDA8 /* Pods-AirAsia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirAsia.release.xcconfig"; path = "Pods/Target Support Files/Pods-AirAsia/Pods-AirAsia.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -192,6 +198,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EAF87831D3DB87D00741F4F /* CoreLocation.framework in Frameworks */,
 				C6EF5E574549208AF323D078 /* Pods_AirAsia.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -202,6 +209,7 @@
 		0B167740B6FDA5E4B488FC14 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7EAF87821D3DB87D00741F4F /* CoreLocation.framework */,
 				5B036AB3D48571EB3373E5C8 /* Pods_AirAsia.framework */,
 			);
 			name = Frameworks;
@@ -228,6 +236,7 @@
 		7E0ED6891D372BD600E33E4F /* AirAsia */ = {
 			isa = PBXGroup;
 			children = (
+				7E1B33D81D3DCBAA00766BEA /* Notification */,
 				7E0ED7511D37594900E33E4F /* Header View */,
 				7E0ED74E1D37589C00E33E4F /* Common Class */,
 				7E0ED7491D37581700E33E4F /* Home */,
@@ -262,6 +271,7 @@
 				7E0ED7211D373BBA00E33E4F /* UIImage+Gif.swift */,
 				7E0ED6B71D3734F800E33E4F /* FireflyAPI.swift */,
 				7E0ED6B81D3734F800E33E4F /* InitialLoadManager.swift */,
+				7EAF87841D3DBC5200741F4F /* BeaconManager.swift */,
 			);
 			name = Helper;
 			sourceTree = "<group>";
@@ -439,6 +449,14 @@
 			name = "Header View";
 			sourceTree = "<group>";
 		};
+		7E1B33D81D3DCBAA00766BEA /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				7E1B33D91D3DCBDD00766BEA /* NotificationViewController.swift */,
+			);
+			name = Notification;
+			sourceTree = "<group>";
+		};
 		F9CDBC3296116EBE1B7E0017 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -594,6 +612,7 @@
 				7E0ED7291D373BBA00E33E4F /* UIImage+Gif.swift in Sources */,
 				7E0ED7821D3760FB00E33E4F /* CommonSeatSelectionViewController.swift in Sources */,
 				7E0ED77E1D375E4200E33E4F /* ExtensionFile.swift in Sources */,
+				7EAF87851D3DBC5200741F4F /* BeaconManager.swift in Sources */,
 				7E0ED7001D37378800E33E4F /* CustomFamilyListTableViewCell.swift in Sources */,
 				7E0ED70D1D3737B500E33E4F /* RSDFCustomDatePickerMonthHeader.swift in Sources */,
 				7E0ED70C1D3737B500E33E4F /* RSDFCustomDatePickerDaysOfWeekView.swift in Sources */,
@@ -605,6 +624,7 @@
 				7E0ED70A1D3737B500E33E4F /* RSDFCustomDatePickerCollectionViewLayout.swift in Sources */,
 				7E0ED6B91D3734F800E33E4F /* FireflyAPI.swift in Sources */,
 				7E0ED70B1D3737B500E33E4F /* RSDFCustomDatePickerDayCell.swift in Sources */,
+				7E1B33DA1D3DCBDD00766BEA /* NotificationViewController.swift in Sources */,
 				7E0ED6F81D37378800E33E4F /* CustomPasswordExpiredlTableViewCell.swift in Sources */,
 				7E0ED7341D373CC700E33E4F /* UserList.swift in Sources */,
 				7E0ED7631D37596700E33E4F /* PassengerHeaderView.swift in Sources */,

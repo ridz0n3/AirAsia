@@ -558,8 +558,57 @@
             </objects>
             <point key="canvasLocation" x="751" y="-320"/>
         </scene>
+        <!--Notification View Controller-->
+        <scene sceneID="TAg-Py-qXL">
+            <objects>
+                <viewController storyboardIdentifier="LogoVC" modalPresentationStyle="overFullScreen" id="MF8-fA-so3" customClass="NotificationViewController" customModule="AirAsia" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tdR-Np-5op"/>
+                        <viewControllerLayoutGuide type="bottom" id="FqC-bs-8qv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="D9c-Ot-LcX">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JaK-Et-96r">
+                                <rect key="frame" x="20" y="20" width="560" height="560"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogoImage" translatesAutoresizingMaskIntoConstraints="NO" id="CFT-Gg-SKU">
+                                        <rect key="frame" x="0.0" y="0.0" width="560" height="560"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f8H-L6-Fsl">
+                                        <rect key="frame" x="0.0" y="0.0" width="46" height="42"/>
+                                        <state key="normal" title="X"/>
+                                        <connections>
+                                            <action selector="closeBtnPressed:" destination="MF8-fA-so3" eventType="touchUpInside" id="EG4-to-qLc"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="CFT-Gg-SKU" firstAttribute="leading" secondItem="JaK-Et-96r" secondAttribute="leading" id="9fh-ax-cwO"/>
+                                    <constraint firstAttribute="bottom" secondItem="CFT-Gg-SKU" secondAttribute="bottom" id="EiW-Cq-wyS"/>
+                                    <constraint firstAttribute="trailing" secondItem="CFT-Gg-SKU" secondAttribute="trailing" id="jYC-0a-jxy"/>
+                                    <constraint firstItem="CFT-Gg-SKU" firstAttribute="top" secondItem="JaK-Et-96r" secondAttribute="top" id="ynu-Gq-RBT"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JaK-Et-96r" firstAttribute="top" secondItem="tdR-Np-5op" secondAttribute="bottom" id="Joh-pH-cPh"/>
+                            <constraint firstAttribute="trailing" secondItem="JaK-Et-96r" secondAttribute="trailing" constant="20" id="SNX-YQ-Mxy"/>
+                            <constraint firstItem="JaK-Et-96r" firstAttribute="leading" secondItem="D9c-Ot-LcX" secondAttribute="leading" constant="20" id="btu-Nd-PXV"/>
+                            <constraint firstItem="FqC-bs-8qv" firstAttribute="top" secondItem="JaK-Et-96r" secondAttribute="bottom" constant="20" id="ke2-uX-QIY"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Cu-bK-ldX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="381" y="-1141"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="LogoImage" width="143" height="239"/>
         <image name="bali" width="1920" height="1200"/>
         <image name="bonus" width="330" height="330"/>
         <image name="dot_horizontal" width="40" height="542"/>
