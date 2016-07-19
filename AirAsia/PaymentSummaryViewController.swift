@@ -25,7 +25,8 @@ class PaymentSummaryViewController: BaseViewController, UITableViewDelegate, UIT
         paymentTableView.rowHeight = UITableViewAutomaticDimension
         super.viewDidLoad()
         //AnalyticsManager.sharedInstance.logScreen(GAConstants.paymentSummaryScreen)
-
+        AnalyticsManager.sharedInstance.logScreen(GAConstants.paymentSummaryScreen)
+        
         continueBtn.layer.cornerRadius = 10
         
         setupLeftButton()

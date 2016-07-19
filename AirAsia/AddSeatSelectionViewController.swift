@@ -14,7 +14,8 @@ class AddSeatSelectionViewController: CommonSeatSelectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
        // AnalyticsManager.sharedInstance.logScreen(GAConstants.seatSelectionScreen)
-                
+        AnalyticsManager.sharedInstance.logScreen(GAConstants.addSeatSelectionScreen)
+        
         var newSeat = [Dictionary<String, AnyObject>]()
         var seatArray = [Dictionary<String, AnyObject>]()
         var seatData = [Dictionary<String, AnyObject>]()

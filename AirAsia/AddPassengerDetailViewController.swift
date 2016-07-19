@@ -26,6 +26,7 @@ class AddPassengerDetailViewController: CommonPassengerDetailViewController {
         module = "addPassenger"
         loadFamilyAndFriendData()
         initializeForm()
+        AnalyticsManager.sharedInstance.logScreen(GAConstants.addPassengerDetailScreen)
         //AnalyticsManager.sharedInstance.logScreen(GAConstants.passengerDetailsScreen)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(AddPassengerDetailViewController.reload(_:)), name: "reloadPicker", object: nil)
     }

@@ -35,6 +35,8 @@ class AddFlightDetailViewController: CommonFlightDetailViewController {
         
         self.flightDetailTableView.tableFooterView = continueView
         
+        AnalyticsManager.sharedInstance.logScreen(GAConstants.addFlightDetailScreen)
+        
        // AnalyticsManager.sharedInstance.logScreen(GAConstants.flightDetailsScreen)
         // Do any additional setup after loading the view.
     }

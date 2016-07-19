@@ -28,7 +28,7 @@ class AddContactDetailViewController: CommonContactDetailViewController {
         checkPassenger.checkColor = UIColor.redColor()
         
         flightType = defaults.objectForKey("flightType") as! String
-        
+        AnalyticsManager.sharedInstance.logScreen(GAConstants.addContactDetailScreen)
         //AnalyticsManager.sharedInstance.logScreen(GAConstants.contactDetailsScreen)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(AddContactDetailViewController.refreshInsurance(_:)), name: "refreshInsurance", object: nil)
         
