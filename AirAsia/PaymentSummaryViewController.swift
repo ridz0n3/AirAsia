@@ -9,6 +9,7 @@
 import UIKit
 import SCLAlertView
 import SwiftyJSON
+import Appsee
 
 class PaymentSummaryViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource{
     
@@ -20,7 +21,7 @@ class PaymentSummaryViewController: BaseViewController, UITableViewDelegate, UIT
     
     @IBOutlet weak var continueBtn: UIButton!
     override func viewDidLoad() {
-        
+        Appsee.start("f985a8f49302498a925aad25e175aca6")
         paymentTableView.estimatedRowHeight = 80
         paymentTableView.rowHeight = UITableViewAutomaticDimension
         super.viewDidLoad()

@@ -10,6 +10,7 @@ import UIKit
 import XLForm
 import SwiftyJSON
 import M13Checkbox
+import Appsee
 
 class CommonContactDetailViewController: BaseXLFormViewController {
     
@@ -32,7 +33,7 @@ class CommonContactDetailViewController: BaseXLFormViewController {
     var ssrStatus = String()
     
     override func viewDidLoad() {
-        
+        Appsee.start("f985a8f49302498a925aad25e175aca6")
         agreeTerm.strokeColor = UIColor.redColor()
         agreeTerm.checkColor = UIColor.redColor()
         self.tableView.estimatedRowHeight = 80

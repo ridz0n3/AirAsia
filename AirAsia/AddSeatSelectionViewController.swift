@@ -8,13 +8,14 @@
 
 import UIKit
 import SwiftyJSON
+import Appsee
 
 class AddSeatSelectionViewController: CommonSeatSelectionViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
        // AnalyticsManager.sharedInstance.logScreen(GAConstants.seatSelectionScreen)
-                
+        Appsee.start("f985a8f49302498a925aad25e175aca6")
         var newSeat = [Dictionary<String, AnyObject>]()
         var seatArray = [Dictionary<String, AnyObject>]()
         var seatData = [Dictionary<String, AnyObject>]()

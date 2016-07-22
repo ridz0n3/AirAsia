@@ -7,9 +7,8 @@
 //
 
 import UIKit
-
-
-
+import AppAnalyticsSwift
+import Appsee
 class HomeViewController: UITabBarController {
 
     private enum TabTitles: String, CustomStringConvertible {
@@ -44,7 +43,7 @@ class HomeViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         UITabBar.appearance().tintColor = UIColor.redColor()
-        
+        Appsee.start("f985a8f49302498a925aad25e175aca6")
         if let tabBarItems = tabBar.items {
             for item in tabBarItems {
                 if let title = item.title,

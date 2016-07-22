@@ -86,6 +86,7 @@ strip_invalid_archs() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-AirAsia/ActionSheetPicker_3_0.framework"
   install_framework "Pods-AirAsia/Alamofire.framework"
+  install_framework "Pods-AirAsia/AppAnalyticsSwift.framework"
   install_framework "Pods-AirAsia/CryptoSwift.framework"
   install_framework "Pods-AirAsia/JVFloatLabeledTextField.framework"
   install_framework "Pods-AirAsia/M13Checkbox.framework"
@@ -105,6 +106,7 @@ fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-AirAsia/ActionSheetPicker_3_0.framework"
   install_framework "Pods-AirAsia/Alamofire.framework"
+  install_framework "Pods-AirAsia/AppAnalyticsSwift.framework"
   install_framework "Pods-AirAsia/CryptoSwift.framework"
   install_framework "Pods-AirAsia/JVFloatLabeledTextField.framework"
   install_framework "Pods-AirAsia/M13Checkbox.framework"

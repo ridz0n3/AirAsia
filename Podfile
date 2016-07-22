@@ -23,5 +23,7 @@ pod 'SlideMenuControllerSwift'
 pod 'Google/CloudMessaging'
 pod 'Fabric'
 pod 'Crashlytics'
+pod 'AppAnalyticsSwift', '~> 0.1'
+pod 'Appsee'
 end
 

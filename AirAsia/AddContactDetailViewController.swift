@@ -11,7 +11,7 @@ import M13Checkbox
 import SwiftyJSON
 import ActionSheetPicker_3_0
 import SCLAlertView
-
+import Appsee
 class AddContactDetailViewController: CommonContactDetailViewController {
     
     @IBOutlet weak var chooseSeatBtn: UIButton!
@@ -23,7 +23,7 @@ class AddContactDetailViewController: CommonContactDetailViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        Appsee.start("f985a8f49302498a925aad25e175aca6")
         checkPassenger.strokeColor = UIColor.redColor()
         checkPassenger.checkColor = UIColor.redColor()
         

@@ -378,6 +378,11 @@ public class SlideMenuController: UIViewController, UIGestureRecognizerDelegate 
                 applyLeftOpacity()
                 applyLeftContentViewScale()
             case UIGestureRecognizerState.Ended, UIGestureRecognizerState.Cancelled:
+                if LeftPanState.lastState != .Changed {
+                    setCloseWindowLevel()
+                    return
+                }
+                
                 let velocity:CGPoint = panGesture.velocityInView(panGesture.view)
                 let panInfo: PanInfo = panLeftResultInfoForVelocity(velocity)
                 
@@ -455,6 +460,11 @@ public class SlideMenuController: UIViewController, UIGestureRecognizerDelegate 
             applyRightContentViewScale()
             
         case UIGestureRecognizerState.Ended, UIGestureRecognizerState.Cancelled:
+            if RightPanState.lastState != .Changed {
+                setCloseWindowLevel()
+                return
+            }
+            
             let velocity: CGPoint = panGesture.velocityInView(panGesture.view)
             let panInfo: PanInfo = panRightResultInfoForVelocity(velocity)
             

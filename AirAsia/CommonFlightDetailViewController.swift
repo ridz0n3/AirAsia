@@ -9,6 +9,7 @@
 import UIKit
 import SwiftyJSON
 import M13Checkbox
+import Appsee
 
 class CommonFlightDetailViewController: BaseViewController {
     
@@ -36,6 +37,7 @@ class CommonFlightDetailViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        Appsee.start("f985a8f49302498a925aad25e175aca6")
         continueBtn.layer.cornerRadius = 10
         // Do any additional setup after loading the view.
         setupLeftButton()

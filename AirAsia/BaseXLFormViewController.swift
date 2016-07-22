@@ -63,7 +63,7 @@ class BaseXLFormViewController: XLFormViewController, MBProgressHUDDelegate {
         let buttons2:[UIBarButtonItem] = [menuButton];
         tools2.setItems(buttons2, animated: false)
         
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(customView: tools2)
+        //self.navigationItem.rightBarButtonItem = UIBarButtonItem(customView: tools2)
     }
     
     func setupMenuButton(){

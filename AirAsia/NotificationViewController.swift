@@ -10,9 +10,13 @@ import UIKit
 
 class NotificationViewController: BaseViewController {
 
+    @IBOutlet weak var views: UIView!
+    @IBOutlet weak var img: UIImageView!
+    @IBOutlet weak var lbl: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.views.transform = CGAffineTransformMakeRotation((270.0 * CGFloat(M_PI)) / 180.0)
+        //self.lbl.transform = CGAffineTransformMakeRotation((90 * CGFloat(M_PI)) / 180.0)
         // Do any additional setup after loading the view.
     }
 

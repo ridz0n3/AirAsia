@@ -479,6 +479,7 @@
 				7E0ED6851D372BD600E33E4F /* Resources */,
 				8FF671039A2C8C38C93D1620 /* Embed Pods Frameworks */,
 				A98C0F563301C1520531C207 /* Copy Pods Resources */,
+				7EA87D9E1D3DF1B800D9BDBA /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -551,6 +552,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		7EA87D9E1D3DF1B800D9BDBA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 6f38953bcf07d7c4f8dd57baf34092f3e0c08720 1d5e1d09b52223abe735d3a94348d92a0ee85d06c89cc8c131dd7b0856d89fa9";
+		};
 		8FF671039A2C8C38C93D1620 /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -786,10 +800,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: wanmuz86@gmail.com (BHD47UUM9Z)";
 				INFOPLIST_FILE = AirAsia/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.me-tech.my.AirAsia";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.me-tech.my.AirAsiaBigPrepaid";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "4acebc2f-2363-4e3f-8443-69da82bfe7e8";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -800,10 +816,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: ME-Tech Solution Sdn Bhd (6S847MQDY3)";
 				INFOPLIST_FILE = AirAsia/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.me-tech.my.AirAsia";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.me-tech.my.AirAsiaBigPrepaid";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "419d5a19-a5ca-433b-b8b2-45c1c77ae65a";
 			};
 			name = Release;
 		};

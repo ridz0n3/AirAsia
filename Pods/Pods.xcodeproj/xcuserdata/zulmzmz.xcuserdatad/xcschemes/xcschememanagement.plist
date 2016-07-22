@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>AppAnalyticsSwift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>CryptoSwift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -97,17 +102,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>016F1A92B9062B0B539DAA9A68F031A0</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>113331C8344479FA212C61E3292ACD87</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1424ED4EDC7110AFC7478729B689B9BC</key>
+		<key>12041200556AFAC5F2C7848FE19EBB1B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1E0D2BD5C40ADF4A4D1C23497E6212C1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>1F6027A1169FCA47593580D918E34096</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -117,17 +127,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>359DF495F325680A681EC3517870287F</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>51FC58BD80F23B7209FA0BED1AA0A643</key>
+		<key>6E33B6F047D8694EAE84BF11F1A12471</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>735882DA95E7FCCEC084FC1C5384FF8A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>76AED6109C6E6C0F250B7DAD1E861836</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -142,37 +152,37 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8300140D8BC67A196297BF6E794F0CEC</key>
+		<key>87E1F98956EA4ED425A4CBEBA8D994AF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>83DA49B98888ADB30A7A63E3125DFFB2</key>
+		<key>A16C0A0004C226CDE358F1004ECB10DB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>847A1F4CBFAD3FF7600F1AD134587425</key>
+		<key>B476E4516DBC16AC9D5B059969EE2ACE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>8C4240230AC38AFCBFDFEB3ACC3774F6</key>
+		<key>B53B474CC2FB8B0127B9F068B064C26D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>98EB27E06D8BC82CB56F8C2CD65FFD26</key>
+		<key>B6DB284DBFA28A6900467240088FE5D6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B70EFD1D976937B363693B8D0EB1EA9B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>CE0A701D8A271EFE0065667D13272921</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>D444B52B594EA83BF6D42D595EBF2B4B</key>
 		<dict>
 			<key>primary</key>
 			<true/>

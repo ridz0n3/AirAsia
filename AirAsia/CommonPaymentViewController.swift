@@ -10,7 +10,7 @@ import UIKit
 import M13Checkbox
 import XLForm
 import SwiftyJSON
-
+import Appsee
 class CommonPaymentViewController: BaseXLFormViewController {
     
     var totalDue = Double()
@@ -30,6 +30,7 @@ class CommonPaymentViewController: BaseXLFormViewController {
     @IBOutlet weak var deleteBtn: UIButton!
     
     override func viewDidLoad() {
+        Appsee.start("f985a8f49302498a925aad25e175aca6")
         super.viewDidLoad()
         continueBtn.layer.cornerRadius = 10
         deleteBtn.layer.cornerRadius = 10

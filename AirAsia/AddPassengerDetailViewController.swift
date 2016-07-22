@@ -10,6 +10,7 @@ import UIKit
 import SwiftyJSON
 import XLForm
 import RealmSwift
+import Appsee
 
 class AddPassengerDetailViewController: CommonPassengerDetailViewController {
     
@@ -17,6 +18,7 @@ class AddPassengerDetailViewController: CommonPassengerDetailViewController {
     var isContinue = Bool()
     
     override func viewDidLoad() {
+        Appsee.start("f985a8f49302498a925aad25e175aca6")
         super.viewDidLoad()
         isContinue = false
         adultArray = [Dictionary<String,AnyObject>]()

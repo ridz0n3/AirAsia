@@ -11,16 +11,17 @@ import SwiftyJSON
 import M13Checkbox
 import SCLAlertView
 import RealmSwift
+import Appsee
 
 class AddFlightDetailViewController: CommonFlightDetailViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        Appsee.start("f985a8f49302498a925aad25e175aca6")
         let rule = "<b>FlyBasic</b><ol><li>This fare is capacity controlled. Seats offered at this fare are limited and may not be available on all flights. All fares are subject to change until purchased.</li><li>Name Change is not permitted.</li><li>Date Change is permitted with payment of fee and fare difference more than 2 hours prior to departure.</li><li>Route Change is not permitted.</li><li>Refund is not permitted. Reservations cannot be cancelled once confirmed.</li><li>For full set of applicable fees, taxes and surcharges, please visit our 'Fees' webpage.</li><li>For general term and conditions, please refer to Firefly General Conditions of Carriage.</li></ol>"
         
         let term = "I confirm, understand and accept Firefly's General Conditions of Carriage. Fare Rules and confirm that the passenger(s) in my reservation does not require Special Assistance and are not categorised as Unaccompanied Minor(s)."
-        
+        /*
         
         fareRule.attributedText = rule.html2String
         fareRule.font = UIFont(name: "System Semibold", size: 14)
@@ -34,7 +35,7 @@ class AddFlightDetailViewController: CommonFlightDetailViewController {
         continueView.frame = newFrame
         
         self.flightDetailTableView.tableFooterView = continueView
-        
+        */
        // AnalyticsManager.sharedInstance.logScreen(GAConstants.flightDetailsScreen)
         // Do any additional setup after loading the view.
     }
@@ -68,9 +69,9 @@ class AddFlightDetailViewController: CommonFlightDetailViewController {
             showErrorMessage("LabelErrorReturnFlight".localized)
         }else if planGo == "flex_class" && flightDetail[0]["flights"][selectedGoingFlight.integerValue][planGo]["status"].string == "sold out"{
             showErrorMessage("LabelErrorGoingFlight".localized)
-        }else if termCheckBox.checkState == M13CheckboxState.Unchecked{
+        }/*else if termCheckBox.checkState == M13CheckboxState.Unchecked{
             showErrorMessage("You must agree to the terms and conditions.")
-        }else{
+        }*/else{
             
             var isType1 = false
             var isError = false

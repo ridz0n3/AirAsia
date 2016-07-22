@@ -9,6 +9,7 @@
 import UIKit
 import SwiftyJSON
 import SCLAlertView
+import Appsee
 
 class CommonSeatSelectionViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -32,6 +33,7 @@ class CommonSeatSelectionViewController: BaseViewController, UITableViewDelegate
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        Appsee.start("f985a8f49302498a925aad25e175aca6")
         continueBtn.layer.cornerRadius = 10
         setupLeftButton()
         

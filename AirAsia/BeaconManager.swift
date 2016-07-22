@@ -50,19 +50,12 @@ class BeaconManager: NSObject, CLLocationManagerDelegate {
     func sendLocalNotificationWithMessage(message: String!, playSound: Bool) {
         let notification:UILocalNotification = UILocalNotification()
         notification.alertBody = message
-        
-        if(playSound) {
-            // classic star trek communicator beep
-            //	http://www.trekcore.com/audio/
-            //
-            // note: convert mp3 and wav formats into caf using:
-            //	"afconvert -f caff -d LEI16@44100 -c 1 in.wav out.caf"
-            // http://stackoverflow.com/a/10388263
             
+        if(playSound) {
             notification.soundName = "tos_beep.caf";
+            UIApplication.sharedApplication().presentLocalNotificationNow(notification)// .scheduleLocalNotification(notification)
         }
         
-        UIApplication.sharedApplication().scheduleLocalNotification(notification)
     }
     
     func locationManager(manager: CLLocationManager,
@@ -72,41 +65,47 @@ class BeaconManager: NSObject, CLLocationManagerDelegate {
         //NSLog("didRangeBeacons");
         var message:String = ""
         
-        var playSound = false
+        var playSound = Bool()
         
         if(beacons.count > 0) {
             let nearestBeacon:CLBeacon = beacons[0]
             
-            if(nearestBeacon.proximity == lastProximity ||
+            /*if(nearestBeacon.proximity == lastProximity ||
                 nearestBeacon.proximity == CLProximity.Unknown) {
                 return;
-            }
+            }*/
+            
             lastProximity = nearestBeacon.proximity;
             
             switch nearestBeacon.proximity {
             case CLProximity.Far:
-                message = "You are far away from the beacon"
-                playSound = true
+                message = "far"
+                playSound = false
             case CLProximity.Near:
-                message = "You are near the beacon"
+                message = "near"
+                playSound = false
             case CLProximity.Immediate:
-                message = "You are in the immediate proximity of the beacon"
+                message = "Collect your Big Points now. You are near Celebrity Fitness, a Tune Big merchant partners shop."
+                playSound = true
+                sendLocalNotificationWithMessage(message, playSound: playSound)
+                locationManager!.stopRangingBeaconsInRegion(region)
             case CLProximity.Unknown:
-                return
+                break
             }
+            
+            
         } else {
             
             if(lastProximity == CLProximity.Unknown) {
                 return;
             }
-            
-            message = "No beacons are nearby"
-            playSound = true
+            message = "far"
+            playSound = false
             lastProximity = CLProximity.Unknown
         }
         
         //NSLog("%@", message)
-        sendLocalNotificationWithMessage(message, playSound: playSound)
+        
     }
     
     func locationManager(manager: CLLocationManager,
@@ -115,7 +114,7 @@ class BeaconManager: NSObject, CLLocationManagerDelegate {
         manager.startUpdatingLocation()
         
        // NSLog("You entered the region")
-        sendLocalNotificationWithMessage("You entered the region", playSound: true)
+        //sendLocalNotificationWithMessage("You entered the region", playSound: true)
     }
     
     func locationManager(manager: CLLocationManager,
@@ -124,7 +123,7 @@ class BeaconManager: NSObject, CLLocationManagerDelegate {
         manager.stopUpdatingLocation()
         
        // NSLog("You exited the region")
-        sendLocalNotificationWithMessage("You exited the region", playSound: true)
+        //sendLocalNotificationWithMessage("You exited the region", playSound: true)
     }
 
 }

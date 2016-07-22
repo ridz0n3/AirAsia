@@ -78,8 +78,8 @@ extension FireFlyAPI : TargetType {
     }
     
     var base: String {
-        //return kStageURL
-        return kDevURL//khttpsProductionURL
+        //return kDevURL
+        return khttpsProductionURL
     }
     
     public var baseURL: NSURL { return NSURL(string: base)! }

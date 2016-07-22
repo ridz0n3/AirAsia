@@ -9,6 +9,7 @@
 import UIKit
 import ActionSheetPicker_3_0
 import SwiftyJSON
+import Appsee
 
 class SearchFlightViewController: BaseViewController, UITableViewDataSource, UITableViewDelegate, UIPickerViewDataSource, UIPickerViewDelegate {
     
@@ -35,10 +36,13 @@ class SearchFlightViewController: BaseViewController, UITableViewDataSource, UIT
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        Appsee.start("f985a8f49302498a925aad25e175aca6")
+        Appsee.startScreen("search");
+        
         continueBtn.layer.cornerRadius = 10
         self.searchFlightTableView.tableHeaderView = headerView
         
-        setupLeftButton()
+        //setupLeftButton()
         getDepartureAirport("search")
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(SearchFlightViewController.departureDate(_:)), name: "departure", object: nil)
@@ -47,6 +51,7 @@ class SearchFlightViewController: BaseViewController, UITableViewDataSource, UIT
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(SearchFlightViewController.departurePicker(_:)), name: "departureSelected", object: nil)
         
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(SearchFlightViewController.arrivalPicker(_:)), name: "arrivalSelected", object: nil)
+        getArrivalAirport((location[26]["location_code"] as? String)!, module : "search")
         // Do any additional setup after loading the view.
     }
     
@@ -101,13 +106,13 @@ class SearchFlightViewController: BaseViewController, UITableViewDataSource, UIT
             if indexPath.row == 1 {
                 
                 cell.iconImg.image = UIImage(named: "departure_icon")
-                cell.airportLbl.text = departure
+                cell.airportLbl.text = "\(location[26]["location"] as! String) (\(location[26]["location_code"] as! String))"
                 cell.airportLbl.tag = indexPath.row
                 
             }else if indexPath.row == 2{
                 
                 cell.iconImg.image = UIImage(named: "arrival_icon")
-                cell.airportLbl.text = arrival
+                cell.airportLbl.text = "\(travel[6]["travel_location"] as! String) (\(travel[6]["travel_location_code"] as! String))"
                 cell.airportLbl.tag = indexPath.row
                 cell.lineStyle.image = UIImage(named: "lines")
                 
@@ -284,7 +289,7 @@ class SearchFlightViewController: BaseViewController, UITableViewDataSource, UIT
                 }
                 
                 showLoading()
-                FireFlyProvider.request(.SearchFlight(type, location[departureSelected]["location_code"]! as! String, travel[arrivalSelected]["travel_location_code"]! as! String, departureText, arrivalText, cell2.adultCount.text!, cell2.infantCount.text!, username, password), completion: { (result) -> () in
+                FireFlyProvider.request(.SearchFlight(type, location[26]["location_code"]! as! String, travel[6]["travel_location_code"]! as! String, departureText, arrivalText, cell2.adultCount.text!, cell2.infantCount.text!, username, password), completion: { (result) -> () in
                     
                     switch result {
                     case .Success(let successResult):
@@ -353,7 +358,7 @@ class SearchFlightViewController: BaseViewController, UITableViewDataSource, UIT
         
         var count = Int()
         
-        if departure == "DEPARTURE AIRPORT"{
+        /*if departure == "DEPARTURE AIRPORT"{
             let indexCell = NSIndexPath.init(forItem: 1, inSection: 0)
             let cell = self.searchFlightTableView.cellForRowAtIndexPath(indexCell) as! CustomSearchFlightTableViewCell
             animateCell(cell)
@@ -367,7 +372,7 @@ class SearchFlightViewController: BaseViewController, UITableViewDataSource, UIT
             count += 1
             
             showErrorMessage("Please choose your arrival airport.")
-        }else if departureDateLbl == "DEPARTURE DATE"{
+        }else */if departureDateLbl == "DEPARTURE DATE"{
             let indexCell = NSIndexPath.init(forItem: 3, inSection: 0)
             let cell = self.searchFlightTableView.cellForRowAtIndexPath(indexCell) as! CustomSearchFlightTableViewCell
             animateCell(cell)

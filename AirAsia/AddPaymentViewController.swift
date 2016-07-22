@@ -8,12 +8,14 @@
 
 import UIKit
 import SwiftyJSON
+import Appsee
 
 class AddPaymentViewController: CommonPaymentViewController {
     var book = String()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        Appsee.start("f985a8f49302498a925aad25e175aca6")
         //AnalyticsManager.sharedInstance.logScreen(GAConstants.addPaymentScreen)
         let valArr = ("\(totalDue)").componentsSeparatedByString(" ")
         let point = (Float(valArr[0])! * 2.5) - Float(valArr[0])!
@@ -22,6 +24,7 @@ class AddPaymentViewController: CommonPaymentViewController {
     }
     
     @IBAction func continueBtnPressed(sender: AnyObject) {
+        Appsee.stopAndUpload()
         let signature = defaults.objectForKey("signature") as! String
         let bookingID = "\(defaults.objectForKey("booking_id")!)"
         /*
